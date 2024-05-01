@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson 2 - Personal Pronouns</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<style>
+body{ background: linear-gradient(45deg, white, #D1E4C4, white); height:950vh; }
+.buttons{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:5px;
+  font-size:30px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:255px;
+  height: 80px;  
+  border-width: 2px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+  
+}
+.buttons:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons:active{
+opacity: 0.7;
+}
+
+.buttons1{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:5px;
+  font-size:23px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:175px;
+  height: 80px;  
+  border-width: 2px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+  
+}
+.buttons1:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons1:active{
+opacity: 0.7;
+}
+.tooltips{
+ position:relative;
+ display:block;
+ text-align:center;
+ font-size:70px;
+ font-weight:bold;
+ cursor:pointer;
+ 
+}
+.tooltips .tooltipstext{
+ visibility:hidden;
+ position:absolute;
+ z-index:1;
+ left:100px;
+ width:1100px;
+ top:125%;
+ background: #F1F7ED;
+ font-size:40px;
+ font-weight:normal;
+ padding: 5px;
+ border-radius: 6px;
+ box-shadow: 5px 0px 7px black;
+ text-align: left;
+ 
+}
+.tooltips:hover .tooltipstext{  visibility: visible;}
+
+
+.dropdown{ display: flex;}
+ .dropdown button{
+  background-color: #D1E4C4; color: black; padding: 10px 30px;
+  border:none; cursor:pointer; box-shadow: 5px 5px 7px black;
+  transition:0.05s; border-radius:4px;
+ }
+
+ .dropdown a{
+  display: flex; text-decoration: none; text-align: center; padding: 10px 23px; margin-top:10px; background-color: #D1E4C4;
+  color:black; box-shadow: 5px 5px 7px black; border-radius:4px; margin-left:5px;
+ }
+
+ .dropdown .content{
+   position: absolute; min-width:100px;
+  display:none;
+ }
+
+ .dropdown:hover .content{ 
+  display:flex;
+ }
+ .dropdown:hover button{
+  background-color: #F1F7ED; color:black;
+ }
+ .dropdown a:hover{
+  background-color: #F1F7ED; color:black;
+ }
+
+
+.p{text-align: center; font-size: 33px;}
+.p1 {text-align: left; font-size: 30px; background-color:#F1F7ED; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;}
+
+.div1 { display:grid; grid-template-columns: 1fr 1fr 1fr 1fr;}
+.div2 {display: grid; grid-template-columns: 900px; justify-content: center;}
+.div3  {display: grid; grid-template-columns: 150px 1fr 1fr 1fr; font-size:30px;}
+.div4 {text-align: left; font-size: 30px; padding-left: 45px;}
+.div5 {display: grid; grid-template-columns: 900px; justify-content: center;}
+.div6 {display: grid; grid-template-columns: 1fr 1fr;}
+.div7 {text-align: center; font-size: 40px;}
+.div8 {display: grid; grid-template-columns: 1fr 1fr 1fr;}
+
+@media screen and (max-width: 1000px){
+.buttons{width: 200px;
+height: 70px;
+ text-align: Center;
+font-size: 30px; 
+ cursor:pointer;
+margin-top: 10px;
+margin-left:10px;
+border-radius: 7px;
+box-shadow: 2px 2px 3px grey;
+border:none;
+background-color: #D1E4C4;
+}
+.buttons:hover{  background-color: #F1F7ED;}
+.buttons:active{  background-color: #D1E4C4;}
+
+.p{text-align: center; font-size: 25px;}
+.p1 {font-size: 20px;}
+
+.div1 {display: grid; grid-template-columns: 1fr; }
+.div2 {display:grid; grid-template-columns: 1fr ;}
+.div3  {display: grid; grid-template-columns:  1fr; font-size: 23px;}
+.div4 {text-align: left; font-size: 23px;}
+.div5 {display: grid; grid-template-columns: 1fr;}
+.div6 {display: grid; grid-template-columns: 1fr;}
+.div7 {text-align: center; font-size: 30px;}
+.div8 {display: grid; grid-template-columns: 1fr ;}
+.wrapper { overflow-x: hidden; width: 100%; background: linear-gradient(45deg, white, #D1E4C4, white);}
+
+.tooltips{
+ position:relative;
+ display:block;
+ text-align:center;
+ font-size:50px;
+ font-weight:bold;
+ cursor:pointer; 
+}
+.tooltips .tooltipstext{
+ visibility:hidden;
+ position:absolute;
+ z-index:1;
+ left:100px;
+ width:1100px;
+ top:125%;
+ background: #F1F7ED;
+ font-size:40px;
+ font-weight:normal;
+ padding: 5px;
+ border-radius: 6px;
+ box-shadow: 5px 0px 7px black;
+}
+.tooltips:hover .tooltipstext{  visibility: hidden;}
+}
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+<div class="wrapper">
+<h1 class="tooltips">  Personal Pronouns </h1>
+
+
+<div class="div1">
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding:20px;">
+
+<p style="text-align: center; font-size: 30px;">Subject</p>
+<button onmousedown="sound1.play()" class="buttons"> I </button>
+<button onmousedown="sound2.play()" class="buttons"> You </button>
+<button onmousedown="sound3.play()" class="buttons"> He </button>
+<button onmousedown="sound4.play()" class="buttons"> She </button>
+<button onmousedown="sound5.play()" class="buttons"> It </button>
+<button onmousedown="sound6.play()" class="buttons"> We </button>
+<button onmousedown="sound7.play()" class="buttons"> They </button>
+</div>
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding:20px;">
+
+<p style="text-align: center; font-size: 30px;">Object</p>
+<button onmousedown="sound8.play()" class="buttons"> Me </button>
+<button onmousedown="sound9.play()" class="buttons"> Your </button>
+<button onmousedown="sound10.play()" class="buttons"> Him </button>
+<button onmousedown="sound11.play()" class="buttons"> Her </button>
+<button onmousedown="sound5.play()" class="buttons"> It </button>
+<button onmousedown="sound12.play()" class="buttons"> Us </button>
+<button onmousedown="sound13.play()" class="buttons"> Them </button>
+</div>
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding:20px;">
+
+<p style="text-align: center; font-size: 30px;">Possessive adjective</p>
+<button onmousedown="sound14.play()" class="buttons"> My </button>
+<button onmousedown="sound9.play()" class="buttons"> Your </button>
+<button onmousedown="sound15.play()" class="buttons"> His </button>
+<button onmousedown="sound16.play()" class="buttons"> Hers </button>
+<button onmousedown="sound17.play()" class="buttons"> Its </button>
+<button onmousedown="sound18.play()" class="buttons"> Our </button>
+<button onmousedown="sound19.play()" class="buttons"> Their </button>
+</div>
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding:20px;">
+
+<p style="text-align: center; font-size: 30px;">Possessive pronoun</p>
+<button onmousedown="sound20.play()" class="buttons"> Mine </button>
+<button onmousedown="sound21.play()" class="buttons"> Yours </button>
+<button onmousedown="sound15.play()" class="buttons"> His </button>
+<button onmousedown="sound16.play()" class="buttons"> Hers </button>
+<button onmousedown="sound.play()" class="buttons"> - </button>
+<button onmousedown="sound22.play()" class="buttons"> Ours </button>
+<button onmousedown="sound23.play()" class="buttons"> Theirs </button>
+</div>
+
+</div>
+
+
+<div class="div2" style=" ">
+
+<p style="text-align: center; font-size: 33px;"></p>
+
+
+<p class="p1" style="">
+We use subject pronouns as the subject of a verb:<br><br>
+
+&bull; <b>I</b> <u>like</u> your dress.<br>
+&bull; <b>You</b> <u>are</u> late.<br>
+&bull; <b>He</b> <u>is</u> my friend.<br>
+&bull; <b>It</b> <u>is</u> raining.<br>
+&bull; <b>She</b> <u>is</u> on holiday.<br>
+&bull; <b>We</b> <u>live</u> in England.<br>
+&bull; <b>They </b><u>come</u> from London.<br><br>
+
+English clauses always have a subject:<br><br>
+&bull; His father has just retired.<br>
+ &#10162; <b>He</b> was a teacher. &#10004<br>
+ &#10162; Was a teacher. &#10006;<br><br>
+
+&bull; I'm waiting for my wife.<br>
+&#10162; <b>She</b> is late. &#10004;<br>
+&#10162;  Is late. &#10006;<br><br>
+
+The imperative, which is used for orders, invitations and requests, is an exception:<br><br>
+
+&bull; <b>Stop!</b><br>
+&bull; <b>Go</b> away.<br>
+&bull; Please <b>come</b> to dinner tomorrow.<br>
+&bull; <b>Play</b> it again, please.<br><br>
+
+If there is no other subject, we use <b>it</b> or <b>there</b>.
+</p>
+
+
+
+
+
+
+<p class="p1" style="text-align: left;  background-color:#D1E4C4; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;"> 
+We use subject pronouns as the subject of a verb:<br><br>
+
+&bull; Can you <u>help</u> <b>me</b>, please?<br>
+&bull; I can <u>see</u> <b>you</b>.<br>
+&bull; She doesn't <u>like</u> <b>him</b>.<br>
+&bull; I <u>saw</u> <b>her</b> in town today.<br>
+&bull; We <u>saw</u> <b>them</b> in town yesterday, but they didn't see <b>us</b>.<br><br>
+
+
+and after prepositions:<br><br>
+
+&bull; She is waiting <u>for</u> <b>me</b>.<br>
+&bull; I'll get it <u>for</u> <b>you</b>.<br>
+&bull; Give it <u>to</u> <b>him</b>.<br>
+&bull; Why are you looking <u>at</u> <b>her</b>?<br>
+&bull; Don't take it <u>from</u> <b>us</b>.<br>
+&bull; I'll speak <u>to</u> <b>them</b>.<br>
+</p>
+
+
+<p  class="p1" style="text-align: left;  background-color:#F1F7ED; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;"> 
+<b> He &bull; She &bull; They</b><br>
+We use <b>he&middot;him</b> to refer to men, and <b>she&middot;her</b> to refer to women.<br> When we are not sure if we are talking about a man or a woman, we use <b>they&middot;them</b>:<br><br>
+
+&bull; This is <b>Jack</b>. <b>He</b>'s my brother. I don't think you have met <b>him</b>.<br>
+&bull; This is <b>Angela</b>. <b>She</b>'s my sister. Have you met <b>her</b> before?<br>
+&bull; You could go to a <b>doctor</b>. <b>They</b> might help <b>you</b>.<br>
+&bull; Talk to a <b>friend</b>. Ask <b>them</b> to help <b>you</b>.
+</p>
+
+<p class="p1" style="text-align: left;  background-color:#D1E4C4; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;"> 
+<b>You &bull; They</b><br>
+We use <b>you</b> to talk about people in general, including the speaker and the hearer:<br><br>
+
+&bull; <b>You</b> can buy this book everywhere.<br>
+&#10162; This book is on sale everywhere.<br><br>
+&bull; <b>You</b> can't park here.<br>
+&#10162; Parking is not allowed here.<br><br>
+
+
+We use <b>they&middot;them</b> to talk about institutions and organisations:<br><br>
+
+&bull; <b>They</b> serve good food here.<br>
+&#10162; <b>They</b> - the restaurant<br><br>
+&bull; Ask <b>them</b> for a cheaper ticket.<br>
+&#10162; <b> them</b> - the airline<br><br>
+
+Especially the government and the authorities:<br><br>
+
+&bull; <b>They</b> don't let you smoke in here. <br>
+&bull; <b>They</b> are going to increase taxes. <br>
+&bull; <b>They</b> say it’s going to rain tomorrow. <br><br>
+</p>
+
+
+<p class="p1" style="text-align: left;  background-color:#F1F7ED; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;"> 
+<b> It</b><br>
+We use <b>it</b> to talk about ourselves:<br><br>
+
+&#9702; On the telephone:<br>
+&bull; Hello. <b>It</b>'s Sarah.<br><br>
+
+&#9702; when other people cannot see us:<br>
+&bull; <b>It</b>'s me. <b>It</b>'s Mary. Mary is knocking on the door.<br><br>
+
+We also use <b>it</b> to talk about other people:<br><br>
+
+&#9702; when we point people out for the first time:<br>
+&bull; Who's that? I think <b>It</b>'s Sarah's brother.<br><br>
+
+&#9702; when we cannot see someone and we ask them for their name:<br>
+&bull; Who is <b>it</b>? someone about to answer the door.
+</p>
+
+
+<p class="p1" style="text-align: left;  background-color:#D1E4C4; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;"> 
+<b>Possessive adjectives</b><br><br>
+
+&#9702; to show something belongs to somebody:<br><br>
+
+&bull; That's our house.<br>
+&bull; My car is very old.<br><br>
+
+
+&#9702; for relations and friends:<br><br>
+
+&bull; My mother is a doctor.<br>
+&bull; How old is your sister?<br><br>
+
+
+&#9702; for parts of the body:<br><br>
+
+&bull; He's broken his arm.<br>
+&bull; She's washing her hair.<br><br>
+
+
+The possessive adjective <b>its</b> does not have an apostrophe <b>'</b>:<br><br>
+
+&bull; That bird has broken <b>its</b> wing. &#10004;<br>
+&#10162; It's wing.  &#10006;<br><br>
+
+It's always means it is or it has.
+</p>
+
+
+<p class="p1" style="text-align: left;  background-color:#F1F7ED; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;"> 
+<b> Possessive pronouns </b><br>
+do not have an apostrophe:<br><br>
+
+&bull; Is that car <b>yours &middot; hers &middot; ours &middot; theirs</b>?  &#10004;<br>
+Is that car your's &middot; her's &middot; our's &middot; their's? &#10006;<br><br>
+
+We can use a possessive pronoun instead of a full noun phrase to avoid repeating words:<br><br>
+&bull; Is that John's car?<br>
+No, it's <b>mine</b>.&emsp; &emsp; &harr; &emsp; &emsp; No, it's my car.<br><br>
+
+&bull; Whose coat is this?<br>
+Is it <b>yours</b>? &ensp;&emsp; &emsp; &harr; &emsp; &emsp; Is it your coat?<br><br>
+
+Her coat is grey.<br>
+<b>Mine</b> is brown. &nbsp; &nbsp;&ensp; &harr; &emsp; &emsp; My coat is brown.<br><br>
+
+We can use possessive pronouns and nouns after of. We can say:<br><br>
+
+&bull; Susan is one of my friends.<br>
+&#10162; Susan is a friend of mine. &#10004; &emsp; Susan is a friend of me. &#10006;<br><br>
+
+&bull; I am one of Susan's friends.<br>
+&#10162; I am a friend of Susan's. &#10004; &emsp;&emsp; I am a friend of Susan. &#10006;
+</p>
+
+</div>
+</div>
+</div>
+
+<script>
+
+  var sound1 = new Audio();
+  sound1.src = "i.mp3";
+
+  var sound2 = new Audio();
+  sound2.src = "you.mp3";
+
+  var sound3 = new Audio();
+  sound3.src = "he.mp3";
+
+  var sound4 = new Audio();
+  sound4.src = "she.mp3";
+
+  var sound5 = new Audio();
+  sound5.src = "it.mp3";
+
+  var sound6 = new Audio();
+  sound6.src = "we.mp3";
+
+  var sound7 = new Audio();
+  sound7.src = "they.mp3";
+
+  var sound8 = new Audio();
+  sound8.src = "me.mp3";
+
+  var sound9 = new Audio();
+  sound9.src = "your.mp3";
+
+  var sound10 = new Audio();
+  sound10.src = "him.mp3";
+
+  var sound11 = new Audio();
+  sound11.src = "her.mp3";
+
+  var sound12 = new Audio();
+  sound12.src = "us.mp3";
+
+ 
+  var sound13 = new Audio();
+  sound13.src = "them.mp3";
+
+  var sound14 = new Audio();
+  sound14.src = "my.mp3";
+
+  var sound15 = new Audio();
+  sound15.src = "his.mp3";
+
+  var sound16 = new Audio();
+  sound16.src = "hers.mp3";
+
+  var sound17 = new Audio();
+  sound17.src = "its.mp3";
+
+  var sound18 = new Audio();
+  sound18.src = "our.mp3";
+
+ 
+  var sound19 = new Audio();
+  sound19.src = "their.mp3";
+
+  var sound20 = new Audio();
+  sound20.src = "mine.mp3";
+
+  var sound21 = new Audio();
+  sound21.src = "yours.mp3";
+
+  var sound22 = new Audio();
+  sound22.src = "ours.mp3";
+
+  var sound23 = new Audio();
+  sound23.src = "theirs.mp3";
+
+ 
+
+  
+
+
+</script>
+</body>
+</html>
